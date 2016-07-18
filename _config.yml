@@ -1,0 +1,197 @@
+
+# Site settings
+
+# NB! Set your site's url, otherwise stuff will break :)
+
+url: "https://jaceee.github.io"
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (https://yourusername.github.io/repository-name)
+# and NOT your user repository (https://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+#
+# NB! Without this *nothing* will work, because it's used in every path :)
+
+baseurl: /
+
+# Google tracking id
+
+google-tracking-id: ""
+
+# Forces https everywhere in your website, except when you serve it locally
+# If you are not hosted on Github Pages, and your host doesn't support https
+# then you should disable it
+
+force-https: True
+
+#############
+# HTML Head #
+#############
+
+lang: "es"
+author: "JC Casas"
+title: "JC - Hola, mundo!"
+description: "Blog y sitio web de JC Casas, publicando principalmente sobre tecnología. Las opiniones aquí expresadas son mías."
+keywords: "jc, casas, tecnología, programación, desarrollo"
+favicon: "/img/favicon.ico"
+
+################
+# Header layout #
+################
+
+black-favicon: "/img/black-lab-glass.ico"
+
+background-img: "../img/intro-bg.jpg"
+
+##############################
+# Dynamic Text on the Header #
+##############################
+
+dynamic-typing: True
+shuffle: True
+loop: True
+loop-count: False
+type-speed: 10
+start-delay: 200
+delete-delay: 5000
+lines:
+  - text: "El poder para construír el futuro"
+  - text: "Haciendo lo difícil fácil"
+
+me-img: "/img/me.jpg"
+
+##############################
+# Color the browser elements #
+##############################
+color-browser: "#222222"
+apple-status-bar-style: "black"
+
+################
+# Web app mode #
+################
+
+web-app-mode: True
+
+# Icons for Web App mode
+
+icon-36p: "/img/web-app/icon-36p.png"
+icon-48p: "/img/web-app/icon-48p.png"
+icon-72p: "/img/web-app/icon-72p.png"
+icon-96p: "/img/web-app/icon-96p.png"
+icon-144p: "/img/web-app/icon-144p.png"
+icon-192p: "/img/web-app/icon-192p.png"
+
+########
+# Blog #
+########
+
+enable-gesture-navigation: True
+
+post-preview-words: 96
+
+paginate: 5
+
+email-share: True
+fb-share: True
+twitter-share: True
+linkedin-share: True
+reddit-share: True
+google-plus-share: True
+tumblr-share: True
+pinterest-share: True
+pocket-share: True
+vkontakte-share: True
+
+
+disqus-shortname: "jccasas"
+
+syntax-highlight: True
+
+############
+# Timeline #
+############
+
+events:
+  - image: "/img/timeline/navacom.jpg"
+    date: "Noviembre 2015 - Julio de 2016"
+    description: "**Desarrollador de software** *Soluciones Navacom S. A. S.*"
+
+  - image: "/img/timeline/udea1.jpg"
+    date: "Enero de 2013 - Julio de 2015"
+    description: "**Ingeniería en sistemas (Incompleta)** *Universidad de Antioquia*"
+
+  - image: "/img/timeline/tdea.jpg"
+    date: "Febrero de 2011 - Noviembre de 2012"
+    description: "**Tecnología en sistemas (Incompleta)** *Tecnológico de Antioquia*"
+
+  - image: "/img/timeline/casd.jpg"
+    date: "2009 - 2010"
+    description: "**Media técnica** *Desarrollo de software*"
+
+# First image of the Timeline
+
+timeline-img: "/img/timeline/initial.jpg"
+
+###########
+# Contact #
+###########
+
+email: "jace.casas@gmail.com"
+
+################
+# Author Blurb #
+################
+
+# The author blurb goes underneath blog posts.
+# This works best when your author blurb image has a transparent background, or matches your site background color.
+
+# if the author_blurb is not set, then this feature is skipped
+author_blurb: "JC Casas es un apasionado estudiante de Ingeniería en Sistemas y desarrollador de software. Disfruta de los juegos de mesa, la música y la artesanía de piezas de software, por lo general inútiles."
+author_blurb_image: "/img/author.jpg"
+
+##################
+# Social Buttons #
+##################
+
+social:
+  - title: "facebook"
+    url: "https://fb.me/jace.casas"
+  - title: "github"
+    url: "https://github.com/jaceee"
+  - title: "rss"
+    url: "/feed.xml"
+
+############
+# 404 page #
+############
+
+404-img: "/img/labtocat.png"
+
+################################################################################
+
+# NB! Tread carefully if you want to change the variables below this point!
+
+# Sections shown in the index page
+
+pages_list:
+  Acerca de: 'acerca-de'
+  Blog: 'latest-post'
+  Timeline: 'timeline'
+  Contacto: 'contacto'
+
+# Exclusion list from the generated _site
+
+exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
+
+# Pagination path
+
+paginate_path: "blog/page:num/"
+
+# Enable minification SASS
+
+sass:
+  style: compressed
+
+gems:
+  - jekyll-paginate
+  - jemoji
