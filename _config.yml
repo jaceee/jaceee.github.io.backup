@@ -112,8 +112,12 @@ syntax-highlight: True
 ############
 
 events:
+  - image: "/img/timeline/freelance1.jpg"
+    date: "Agosto de 2016 - Actualidad"
+    description: "**Desarrollador de software** *Freelance*"
+
   - image: "/img/timeline/navacom.jpg"
-    date: "Noviembre 2015 - Julio de 2016"
+    date: "Noviembre de 2015 - Julio de 2016"
     description: "**Desarrollador de software** *Soluciones Navacom S. A. S.*"
 
   - image: "/img/timeline/udea1.jpg"
